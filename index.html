@@ -3,215 +3,310 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>15% Descuento Oriflame | Beneficios Member y Envío Gratis</title>
+<title>Activa tu 15% de bienvenida en Oriflame</title>
 
-<meta name="description" content="Activa tu 15% de descuento en Oriflame, consigue 15% de cashback, envío gratis con productos Top seleccionados y recompensas por recomendar. Registro gratuito sin compromiso.">
+<meta name="description" content="Regístrate gratis como Member en Oriflame y consigue 15% de descuento de bienvenida, 15% de cashback en cada compra, envío gratis con productos Top seleccionados y recibe tu pedido en casa.">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
 
 body{
-background:#f4f6f3;
-color:#1f1f1f;
-line-height:1.6;
-}
-
-.hero{
-background:linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.95)),
-url('https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?q=80&w=1600') center/cover;
-text-align:center;
-padding:120px 20px;
-}
-
-.hero h1{
-font-size:42px;
-margin-bottom:20px;
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#f4f6f5;
 color:#1c2b1f;
 }
 
-.hero p{
-max-width:700px;
-margin:0 auto 35px;
-font-size:19px;
-color:#444;
+/* HERO */
+
+.hero{
+background:linear-gradient(135deg,#0f2a1d,#1c3b28,#284e37);
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:40px 20px;
+position:relative;
+overflow:hidden;
 }
 
-.badge{
-display:inline-block;
-background:#1c2b1f;
-color:#fff;
-padding:8px 18px;
-border-radius:30px;
-font-size:14px;
-margin-bottom:25px;
+.hero::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background:radial-gradient(circle,rgba(255,255,255,0.08),transparent 70%);
+top:-200px;
+right:-200px;
+}
+
+.hero-card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(18px);
+padding:60px 40px;
+border-radius:20px;
+text-align:center;
+max-width:850px;
+color:white;
+box-shadow:0 25px 60px rgba(0,0,0,0.4);
+animation:fadeUp 1s ease forwards;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+opacity:0.9;
+}
+
+.highlight{
+font-size:20px;
 letter-spacing:1px;
+margin-bottom:15px;
+color:#caffd2;
 }
 
 .btn{
-display:inline-block;
-background:#1c2b1f;
-color:white;
-padding:20px 45px;
+background:white;
+color:#1c2b1f;
+padding:18px 45px;
 font-size:20px;
-border-radius:8px;
+border-radius:50px;
 text-decoration:none;
+display:inline-block;
 transition:0.3s;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
+box-shadow:0 15px 30px rgba(0,0,0,0.3);
 }
 
 .btn:hover{
-background:#2f4233;
-transform:translateY(-3px);
+transform:scale(1.07);
 }
 
+.counter{
+font-size:24px;
+margin-bottom:20px;
+color:#d6ffd9;
+}
+
+@keyframes fadeUp{
+from{opacity:0; transform:translateY(40px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* BENEFICIOS */
+
 .section{
-max-width:1000px;
-margin:80px auto;
-padding:0 20px;
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+text-align:center;
+}
+
+.section h2{
+font-size:32px;
+margin-bottom:50px;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
-margin-top:40px;
 }
 
 .card{
-background:#fff;
+background:white;
 padding:30px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.06);
+border-radius:18px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
 }
 
-.steps{
-margin-top:40px;
+.card h3{
+margin-bottom:15px;
+color:#1c3b28;
 }
 
-.step{
-margin-bottom:25px;
+/* CALCULADORA */
+
+.calculator{
+background:#1c3b28;
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.calculator input{
+padding:12px;
+border-radius:8px;
+border:none;
+margin-top:15px;
+font-size:16px;
+width:200px;
+}
+
+.result{
+margin-top:20px;
+font-size:22px;
+color:#caffd2;
+}
+
+/* TESTIMONIO */
+
+.testimonial{
+padding:60px 20px;
+text-align:center;
+font-style:italic;
+max-width:800px;
+margin:auto;
+}
+
+/* BARRA FIJA */
+
+.fixed-bar{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#0f2a1d;
+padding:15px;
+text-align:center;
+}
+
+.fixed-bar a{
+color:white;
+text-decoration:none;
 font-size:18px;
 }
 
-.cta-final{
-background:#1c2b1f;
-color:white;
-text-align:center;
-padding:80px 20px;
-}
-
-.cta-final h2{
-font-size:32px;
-margin-bottom:25px;
+@media(min-width:768px){
+.fixed-bar{display:none;}
 }
 
 footer{
+padding:30px;
 text-align:center;
-padding:35px;
 font-size:14px;
-color:#777;
+background:#f4f6f5;
 }
 
-@media(max-width:768px){
-.hero h1{font-size:30px;}
-}
 </style>
 </head>
 
 <body>
 
 <section class="hero">
+<div class="hero-card">
 
-<div class="badge">PROGRAMA MEMBER OFICIAL</div>
+<div class="highlight">✨ PROGRAMA MEMBER OFICIAL</div>
 
 <h1>Activa tu 15% de bienvenida en Oriflame</h1>
 
+<div class="counter">
+Obtén <span id="cashback">0</span>% de descuento + cashback en cada compra
+</div>
+
 <p>
-Regístrate gratis y accede a beneficios exclusivos en cosmética natural:
-descuento de bienvenida, cashback en cada compra, envío gratis con productos Top seleccionados y recompensas por recomendar.
+Regístrate gratis y accede a descuento de bienvenida, 15% de cashback,
+envío gratis al elegir productos Top seleccionados en cada catálogo
+y recibe tu pedido cómodamente en casa.
 </p>
 
-<a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez"
-class="btn"
-target="_blank">
-✨ Activar mi 15% ahora
+<a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez" class="btn" target="_blank">
+Activar mi descuento ahora
 </a>
 
-<p style="margin-top:20px;font-size:14px;color:#666;">
-Compra segura · Registro gratuito · Sin compromiso
+<p style="margin-top:20px;font-size:14px;opacity:0.8;">
+Registro gratuito · Compra segura · Sin compromiso
 </p>
 
+</div>
 </section>
 
 <section class="section">
-
 <h2>Beneficios exclusivos del programa Member</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>15% Bienvenida</h3>
-<p>Obtén un 15% de descuento en tu primer pedido al registrarte como Member.</p>
+<h3>🎁 15% Bienvenida</h3>
+<p>Obtén un 15% de descuento en tu primer pedido al registrarte.</p>
 </div>
 
 <div class="card">
-<h3>15% Cashback</h3>
-<p>Recibe el 15% de tus compras en saldo acumulable para futuros pedidos.</p>
+<h3>💸 15% Cashback</h3>
+<p>Recibe saldo acumulable en cada compra para futuros pedidos.</p>
 </div>
 
 <div class="card">
-<h3>Envío GRATIS</h3>
-<p>Consigue envío sin coste al elegir uno de los productos Top seleccionados en cada catálogo.</p>
+<h3>🚚 Envío Gratis</h3>
+<p>Envío sin coste al elegir productos Top seleccionados del catálogo.</p>
 </div>
 
 <div class="card">
-<h3>Recompensas</h3>
-<p>Gana beneficios adicionales al compartir productos con amigos y familiares.</p>
-</div>
-
-<div class="card">
-<h3>Entrega en casa</h3>
-<p>Recibe tu pedido cómodamente en tu domicilio, sin intermediarios.</p>
+<h3>🏠 Recibe en casa</h3>
+<p>Compra online y recibe tu pedido cómodamente en tu domicilio.</p>
 </div>
 
 </div>
-
 </section>
 
-<section class="section">
+<section class="calculator">
+<h2>¿Cuánto puedes ahorrar al año?</h2>
+<p>Introduce cuánto gastas al mes en cosmética:</p>
 
-<h2>¿Cómo funciona?</h2>
+<input type="number" id="gasto" placeholder="Ej: 50">
 
-<div class="steps">
-
-<div class="step">1️⃣ Te registras gratis como Member.</div>
-<div class="step">2️⃣ Activas tu 15% de bienvenida.</div>
-<div class="step">3️⃣ Compras, acumulas cashback y disfrutas de ventajas exclusivas.</div>
-
-</div>
-
+<div class="result" id="resultado"></div>
 </section>
 
-<section class="cta-final">
-
-<h2>Empieza hoy con ventajas privadas en belleza natural</h2>
-
-<a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez"
-class="btn"
-target="_blank">
-🛍 Quiero mi descuento ahora
-</a>
-
+<section class="testimonial">
+“Desde que soy Member acumulo saldo en cada pedido y aprovecho el envío gratis.
+Es la mejor forma de comprar cosmética natural con ventajas reales.”
 </section>
 
 <footer>
-© 2026 Comunidad independiente informativa sobre beneficios Member Oriflame
+© 2026 Club Belleza Natural · Comunidad online de cosmética natural
 </footer>
+
+<div class="fixed-bar">
+<a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez" target="_blank">
+✨ Activa tu 15% ahora
+</a>
+</div>
+
+<script>
+
+/* Contador */
+let count = 0;
+let target = 15;
+let interval = setInterval(function(){
+if(count >= target){clearInterval(interval);}
+else{
+count++;
+document.getElementById("cashback").innerText = count;
+}
+},80);
+
+/* Calculadora */
+document.getElementById("gasto").addEventListener("input", function(){
+let gasto = this.value;
+let ahorro = gasto * 12 * 0.15;
+if(gasto > 0){
+document.getElementById("resultado").innerHTML =
+"Podrías ahorrar aproximadamente " + ahorro.toFixed(2) + "€ al año.";
+}else{
+document.getElementById("resultado").innerHTML = "";
+}
+});
+
+</script>
 
 </body>
 </html>
