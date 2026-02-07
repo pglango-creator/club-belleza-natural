@@ -62,14 +62,20 @@ box-shadow:0 18px 40px rgba(0,0,0,0.3);
 transform:scale(1.05);
 }
 
-/* SECCIÓN BENEFICIOS (fusión de fondo) */
+/* SECCIÓN */
 
 .section{
 padding:100px 20px;
 max-width:1000px;
 margin:auto;
 text-align:center;
-background:linear-gradient(to bottom,#eef5f0 0%, #f6f3ed 100%);
+
+/* FUSIÓN SUAVE CON EL HERO */
+background:
+linear-gradient(to bottom,
+rgba(28,59,40,0.15) 0%,
+rgba(238,245,240,0.9) 25%,
+#f6f3ed 100%);
 }
 
 .section h2{
@@ -78,10 +84,11 @@ margin-bottom:60px;
 color:#1c3b28;
 }
 
-/* BOTONES DESPLEGABLES */
+/* DESPLEGABLES */
 
 .accordion{
-background:white;
+background:#ffffff;
+border:2px solid #2f5f42;
 border-radius:25px;
 padding:28px;
 margin:22px 0;
@@ -90,12 +97,11 @@ cursor:pointer;
 transition:0.3s;
 font-weight:600;
 color:#1c3b28;
-border:2px solid #2f5f42;
 font-size:18px;
 }
 
 .accordion:hover{
-transform:translateY(-4px);
+transform:translateY(-6px);
 }
 
 .panel{
@@ -103,7 +109,7 @@ max-height:0;
 overflow:hidden;
 transition:0.4s ease;
 padding:0 30px;
-background:#e4f1ea;
+background:linear-gradient(135deg,#dff0e6,#f0f7f3);
 border-radius:0 0 25px 25px;
 color:#1c3b28;
 }
@@ -223,7 +229,7 @@ target="_blank" class="cta">
 
 <div class="accordion">🎁 15% de Bienvenida</div>
 <div class="panel">
-<p>Obtén un 15% de descuento directo en tu primer pedido al registrarte como Member.</p>
+<p>Obtén un 15% de descuento en tu primer pedido al registrarte como Member.</p>
 </div>
 
 <div class="accordion">💸 15% Cashback acumulable</div>
@@ -241,6 +247,11 @@ target="_blank" class="cta">
 <p>Comparte productos desde tu cuenta y gana saldo adicional en tu wallet cuando otras personas compren.</p>
 </div>
 
+<div class="accordion">🏠 Recibe tu pedido en casa</div>
+<div class="panel">
+<p>Compra online desde la tienda oficial y recibe tu pedido cómodamente en tu domicilio.</p>
+</div>
+
 <div class="highlight">
 El registro como Member es completamente gratuito, sin compromiso de compra y puedes cancelarlo cuando quieras.
 Accedes a promociones privadas y ventajas exclusivas en cada catálogo.
@@ -250,11 +261,11 @@ Accedes a promociones privadas y ventajas exclusivas en cada catálogo.
 
 <section class="entrepreneur" id="equipo">
 
-<h2>Únete al equipo y genera ingresos extra con los productos que te encantan</h2>
+<h2>Únete al equipo si quieres ganar un dinero extra ofreciendo los productos que te encantan</h2>
 
 <p>
-Si te gustaría ganar un dinero extra recomendando productos de belleza que realmente usas y te gustan,
-contáctame sin compromiso y te explico cómo empezar paso a paso dentro del equipo.
+Si te interesa formar parte del equipo y empezar desde casa con apoyo real,
+contáctame sin compromiso y te explico cómo funciona paso a paso.
 </p>
 
 <a href="https://wa.me/34610274439" target="_blank" class="whatsapp-btn">
@@ -268,7 +279,7 @@ Guía informativa independiente sobre el programa Member.
 </div>
 
 <a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez"
-target="_blank" class="floating">
+target="_blank" class="floating" id="floatBtn">
 ✨ Quiero activar mi 15% para siempre
 </a>
 
@@ -279,6 +290,18 @@ acc[i].addEventListener("click", function() {
 this.classList.toggle("active");
 });
 }
+
+const floatBtn = document.getElementById("floatBtn");
+const equipo = document.getElementById("equipo");
+
+window.addEventListener("scroll", function(){
+const rect = equipo.getBoundingClientRect();
+if(rect.top < window.innerHeight - 100){
+floatBtn.style.display = "none";
+}else{
+floatBtn.style.display = "block";
+}
+});
 </script>
 
 </body>
