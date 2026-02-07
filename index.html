@@ -92,7 +92,7 @@ margin-bottom:60px;
 color:#1c3b28;
 }
 
-/* DESPLEGABLES */
+/* DESPLEGABLES MÁS CLAROS Y CLICABLES */
 
 .accordion{
 background:#ffffff;
@@ -109,17 +109,39 @@ font-size:18px;
 position:relative;
 }
 
+.accordion::before{
+content:"Toca para ver más";
+position:absolute;
+top:-12px;
+right:25px;
+font-size:12px;
+background:#2f5f42;
+color:white;
+padding:4px 10px;
+border-radius:15px;
+opacity:0.9;
+}
+
 .accordion::after{
-content:"＋";
+content:"▼";
 position:absolute;
 right:25px;
-font-size:22px;
+bottom:18px;
+font-size:18px;
 color:#2f5f42;
 transition:0.3s;
+animation:subeBaja 1.8s infinite;
+}
+
+@keyframes subeBaja{
+0%{transform:translateY(0);}
+50%{transform:translateY(4px);}
+100%{transform:translateY(0);}
 }
 
 .accordion.active::after{
-content:"−";
+transform:rotate(180deg);
+animation:none;
 }
 
 .accordion:hover{
@@ -141,30 +163,33 @@ max-height:300px;
 padding:25px 30px;
 }
 
-/* BLOQUE CONFIANZA MEJORADO */
+/* BLOQUE CONFIANZA MUCHO MÁS DESTACADO */
 
 .highlight{
-background:linear-gradient(135deg,#e9f2ec,#f4f9f6);
-padding:45px;
-border-radius:30px;
-margin:80px 0;
-font-size:20px;
-font-weight:600;
-box-shadow:0 20px 45px rgba(0,0,0,0.08);
-border:3px solid #2f5f42;
+background:linear-gradient(135deg,#e2f4ea,#ffffff);
+padding:50px;
+border-radius:35px;
+margin:90px 0;
+font-size:22px;
+font-weight:700;
+box-shadow:0 25px 60px rgba(0,0,0,0.12);
+border:4px solid #2f5f42;
 position:relative;
+transform:scale(1.02);
 }
 
 .highlight::before{
-content:"🔒";
+content:"✔ REGISTRO 100% GRATUITO";
 position:absolute;
 top:-18px;
 left:50%;
 transform:translateX(-50%);
-background:#f6f3ed;
-padding:6px 12px;
-font-size:20px;
-border-radius:20px;
+background:#2f5f42;
+color:white;
+padding:8px 18px;
+font-size:13px;
+border-radius:25px;
+letter-spacing:1px;
 }
 
 /* EQUIPO */
