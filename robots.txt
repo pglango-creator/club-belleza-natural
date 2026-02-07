@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pglango-creator.github.io/club-belleza-natural/sitemap.xml
