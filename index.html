@@ -5,196 +5,197 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>15% Descuento Oriflame | Beneficios Member</title>
 
-<meta name="description" content="Consigue el 15% de descuento en Oriflame al registrarte como Member. Obtén cashback, envío gratis con productos seleccionados, comparte y gana wallet y recibe tu pedido en casa. Registro gratuito.">
+<meta name="description" content="Consigue el 15% de descuento en Oriflame al registrarte como Member. Obtén cashback, envío gratis con productos seleccionados y ventajas exclusivas. Registro gratuito.">
 
 <style>
 
 body{
 margin:0;
 font-family:'Segoe UI',sans-serif;
-background:linear-gradient(to bottom,#f2efe9 0%,#f6f4ef 40%,#eef5f0 100%);
+background:linear-gradient(to bottom,#f4f1ea 0%,#f7f4ef 40%,#eef5f0 100%);
 color:#1c1c1c;
-line-height:1.6;
+line-height:1.7;
 }
 
 /* HERO */
 
 .hero{
-background:linear-gradient(135deg,#1c3b28,#2e6b47);
-padding:100px 20px;
+background:linear-gradient(rgba(28,59,40,0.78),rgba(28,59,40,0.78)),
+url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1600');
+background-size:cover;
+background-position:center;
+padding:130px 20px 120px;
 text-align:center;
 color:white;
-position:relative;
 }
 
 .hero h1{
-font-size:36px;
-max-width:850px;
-margin:auto;
-text-shadow:0 2px 8px rgba(0,0,0,0.4);
--webkit-text-stroke:0.5px rgba(255,255,255,0.3);
+font-size:42px;
+line-height:1.2;
+text-shadow:0 4px 25px rgba(0,0,0,0.6);
+-webkit-text-stroke:0.4px rgba(255,255,255,0.25);
+margin-bottom:25px;
 }
 
 .hero p{
-max-width:750px;
-margin:25px auto;
-font-size:19px;
-opacity:0.95;
-text-shadow:0 2px 6px rgba(0,0,0,0.4);
+font-size:20px;
+max-width:800px;
+margin:auto;
+text-shadow:0 3px 20px rgba(0,0,0,0.6);
 }
-
-/* BOTONES */
 
 .cta{
 display:inline-block;
-margin-top:25px;
-padding:16px 45px;
+margin-top:35px;
+padding:18px 50px;
 background:white;
 color:#1c3b28;
-border-radius:40px;
+border-radius:60px;
 text-decoration:none;
-font-size:18px;
+font-size:19px;
 font-weight:bold;
 transition:0.3s;
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
+box-shadow:0 18px 40px rgba(0,0,0,0.3);
 }
 
 .cta:hover{
-transform:scale(1.07);
+transform:scale(1.05);
 }
 
-/* SECCIONES */
+/* SECCIÓN */
 
 .section{
-padding:80px 20px;
-max-width:1100px;
+padding:100px 20px;
+max-width:1000px;
 margin:auto;
 text-align:center;
 }
 
 .section h2{
-font-size:30px;
-margin-bottom:40px;
+font-size:32px;
+margin-bottom:60px;
 color:#1c3b28;
 }
 
-/* DESPLEGABLES BENEFICIOS */
+/* DESPLEGABLES */
 
 .accordion{
-max-width:900px;
-margin:30px auto;
-text-align:left;
-}
-
-.accordion-item{
-background:linear-gradient(135deg,#ffffff,#f7f4ef);
-margin-bottom:20px;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,0.06);
-}
-
-.accordion-header{
-padding:22px;
+background:linear-gradient(135deg,#f9f7f2,#ece6dc);
+border-radius:25px;
+padding:28px;
+margin:22px 0;
+box-shadow:0 18px 40px rgba(0,0,0,0.06);
 cursor:pointer;
-font-weight:bold;
-font-size:18px;
-background:#e7f2ea;
-color:#1c3b28;
 transition:0.3s;
+font-weight:600;
+color:#1c3b28;
+border-left:8px solid #2f5f42;
+font-size:18px;
 }
 
-.accordion-header:hover{
-background:#d4eadf;
+.accordion:hover{
+transform:translateY(-6px);
 }
 
-.accordion-content{
+.panel{
 max-height:0;
 overflow:hidden;
-transition:max-height 0.4s ease;
-padding:0 22px;
-background:white;
+transition:0.4s ease;
+padding:0 30px;
+background:linear-gradient(135deg,#dff0e6,#f0f7f3);
+border-radius:0 0 25px 25px;
+color:#1c3b28;
 }
 
-.accordion-content p{
-margin:20px 0;
+.accordion.active{
+background:linear-gradient(135deg,#eef5f0,#e2efe7);
 }
 
-/* BLOQUE DESTACADO CONFIANZA */
+.accordion.active + .panel{
+max-height:300px;
+padding:25px 30px;
+}
+
+/* BLOQUE CONFIANZA */
 
 .highlight{
-background:#e7f2ea;
-padding:25px;
-border-left:6px solid #285c3e;
-margin:50px auto;
-font-size:18px;
+background:linear-gradient(135deg,#e9f2ec,#f4f9f6);
+padding:40px;
+border-radius:25px;
+margin:70px 0;
+font-size:19px;
 font-weight:500;
-max-width:900px;
-border-radius:10px;
+box-shadow:0 15px 35px rgba(0,0,0,0.05);
 }
 
-/* BLOQUE EMPRENDEDORA */
+/* EQUIPO */
 
 .entrepreneur{
-background:linear-gradient(135deg,#1c3b28,#285c3e);
+background:linear-gradient(135deg,#1c3b28,#2f5f42);
 color:white;
-padding:90px 20px;
+padding:110px 20px;
 text-align:center;
 }
 
 .entrepreneur h2{
-font-size:32px;
-margin-bottom:25px;
+font-size:34px;
+margin-bottom:30px;
+}
+
+.entrepreneur p{
+max-width:750px;
+margin:auto;
+font-size:20px;
+opacity:0.95;
 }
 
 .whatsapp-btn{
 display:inline-block;
-margin-top:30px;
-padding:16px 40px;
+margin-top:40px;
+padding:18px 45px;
 background:#25D366;
 color:white;
-border-radius:40px;
+border-radius:60px;
 text-decoration:none;
-font-size:18px;
+font-size:20px;
 font-weight:bold;
 transition:0.3s;
-box-shadow:0 8px 20px rgba(0,0,0,0.3);
+box-shadow:0 18px 40px rgba(0,0,0,0.3);
 }
 
 .whatsapp-btn:hover{
-transform:scale(1.07);
+transform:scale(1.05);
 }
 
 /* BOTÓN FLOTANTE */
 
-.floating-btn{
+.floating{
 position:fixed;
-bottom:20px;
+bottom:25px;
 left:50%;
 transform:translateX(-50%);
-background:#1c3b28;
+background:linear-gradient(135deg,#1c3b28,#2f5f42);
 color:white;
-padding:15px 35px;
-border-radius:50px;
+padding:18px 55px;
+border-radius:60px;
 text-decoration:none;
 font-weight:bold;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
-z-index:999;
+box-shadow:0 18px 45px rgba(0,0,0,0.35);
 transition:0.3s;
+z-index:999;
+font-size:18px;
+white-space:nowrap;
 }
 
-.floating-btn:hover{
+.floating:hover{
 transform:translateX(-50%) scale(1.05);
 }
-
-/* FOOTER */
 
 .footer{
 background:#1c3b28;
 color:white;
-padding:30px;
+padding:40px;
 text-align:center;
-margin-top:60px;
 font-size:14px;
 }
 
@@ -223,88 +224,81 @@ target="_blank" class="cta">
 
 <h2>Beneficios exclusivos</h2>
 
-<div class="accordion">
-
-<div class="accordion-item">
-<div class="accordion-header">🎁 15% de Bienvenida</div>
-<div class="accordion-content">
-<p>Obtén un 15% de descuento directo en tu primer pedido al registrarte como Member.</p>
-</div>
+<div class="accordion">🎁 15% de Bienvenida</div>
+<div class="panel">
+<p>Obtén un 15% de descuento en tu primer pedido al registrarte como Member.</p>
 </div>
 
-<div class="accordion-item">
-<div class="accordion-header">💸 15% Cashback acumulable</div>
-<div class="accordion-content">
-<p>Recibe el 15% del importe de tus compras en saldo wallet para futuras compras.</p>
-</div>
+<div class="accordion">💸 15% Cashback acumulable</div>
+<div class="panel">
+<p>Recibe el 15% del importe de tus compras en saldo acumulable para futuras compras.</p>
 </div>
 
-<div class="accordion-item">
-<div class="accordion-header">🚚 Envío gratis con productos seleccionados</div>
-<div class="accordion-content">
-<p>En cada catálogo puedes conseguir envío gratuito incluyendo productos Top seleccionados.</p>
-</div>
+<div class="accordion">🚚 Envío gratis con productos seleccionados</div>
+<div class="panel">
+<p>Puedes conseguir envío gratuito al incluir productos Top destacados en cada catálogo.</p>
 </div>
 
-<div class="accordion-item">
-<div class="accordion-header">🤝 Comparte y Gana</div>
-<div class="accordion-content">
-<p>Comparte productos desde tu cuenta y gana saldo en tu wallet cuando otras personas compren.</p>
-</div>
+<div class="accordion">🤝 Comparte y Gana</div>
+<div class="panel">
+<p>Comparte productos desde tu cuenta y gana saldo adicional en tu wallet cuando otras personas compren.</p>
 </div>
 
+<div class="accordion">🏠 Recibe tu pedido en casa</div>
+<div class="panel">
+<p>Compra online desde la tienda oficial y recibe tu pedido cómodamente en tu domicilio.</p>
 </div>
 
 <div class="highlight">
-El registro es gratuito, sin compromiso de compra y puedes cancelarlo cuando quieras.
+El registro como Member es completamente gratuito, sin compromiso de compra y puedes cancelarlo cuando quieras.
+Accedes a promociones privadas y ventajas exclusivas en cada catálogo.
 </div>
-
-<a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez"
-target="_blank" class="cta">
-Quiero registrarme con descuento
-</a>
 
 </section>
 
-<section class="entrepreneur">
+<section class="entrepreneur" id="equipo">
 
-<h2>Únete al equipo y empieza sin inversión</h2>
+<h2>Únete al equipo y empieza cuando tú quieras</h2>
 
 <p>
-Crea tu propio negocio online de belleza sin inversión inicial,
-sin compra obligatoria y con acompañamiento paso a paso.
-Empieza desde casa, a tu ritmo y con libertad total.
+Formarás parte de un equipo donde avanzamos juntas.
+Tendrás apoyo real desde el primer día, resolveremos tus dudas
+y podrás empezar sin presión, a tu ritmo y con total libertad.
 </p>
 
 <a href="https://wa.me/34610274439" target="_blank" class="whatsapp-btn">
-💚 Quiero empezar sin inversión
+💚 Quiero unirme
 </a>
-
-<p style="margin-top:15px;font-size:14px;opacity:0.9;">
-Información sin compromiso · Respuesta directa por WhatsApp
-</p>
 
 </section>
 
+<div class="footer">
+Guía informativa independiente sobre el programa Member.
+</div>
+
 <a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez"
-target="_blank" class="floating-btn">
+target="_blank" class="floating" id="floatBtn">
 ✨ Quiero activar mi 15% para siempre
 </a>
 
-<div class="footer">
-Esta web es una guía informativa independiente sobre el programa Member. No es una web oficial de la compañía.
-</div>
-
 <script>
-document.querySelectorAll(".accordion-header").forEach(item=>{
-item.addEventListener("click",()=>{
-const content=item.nextElementSibling;
-if(content.style.maxHeight){
-content.style.maxHeight=null;
-}else{
-content.style.maxHeight=content.scrollHeight+"px";
-}
+var acc = document.getElementsByClassName("accordion");
+for (var i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+this.classList.toggle("active");
 });
+}
+
+const floatBtn = document.getElementById("floatBtn");
+const equipo = document.getElementById("equipo");
+
+window.addEventListener("scroll", function(){
+const rect = equipo.getBoundingClientRect();
+if(rect.top < window.innerHeight - 100){
+floatBtn.style.display = "none";
+}else{
+floatBtn.style.display = "block";
+}
 });
 </script>
 
