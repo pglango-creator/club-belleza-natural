@@ -5,174 +5,186 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>15% Descuento Oriflame | Beneficios Member</title>
 
-<meta name="description" content="Consigue el 15% de descuento en Oriflame al registrarte como Member. Obtén cashback, envío gratis con productos seleccionados y ventajas exclusivas. Registro gratuito.">
+<meta name="description" content="Consigue el 15% de descuento en Oriflame al registrarte como Member. Obtén cashback, envío gratis con productos seleccionados, comparte y gana wallet y recibe tu pedido en casa. Registro gratuito.">
 
 <style>
 
 body{
 margin:0;
 font-family:'Segoe UI',sans-serif;
-background:#f3efe8;
+background:linear-gradient(to bottom,#f2efe9 0%,#f6f4ef 40%,#eef5f0 100%);
 color:#1c1c1c;
-line-height:1.7;
+line-height:1.6;
 }
 
-/* HERO CON IMAGEN BELLEZA */
+/* HERO */
 
 .hero{
-background:linear-gradient(rgba(28,59,40,0.75),rgba(28,59,40,0.75)),
-url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1600');
-background-size:cover;
-background-position:center;
-padding:120px 20px 110px;
+background:linear-gradient(135deg,#1c3b28,#2e6b47);
+padding:100px 20px;
 text-align:center;
 color:white;
-}
-
-.hero-content{
-background:rgba(0,0,0,0.35);
-backdrop-filter:blur(6px);
-padding:45px;
-border-radius:25px;
-display:inline-block;
-max-width:900px;
+position:relative;
 }
 
 .hero h1{
-font-size:38px;
-line-height:1.3;
-text-shadow:0 4px 20px rgba(0,0,0,0.6);
-margin-bottom:20px;
+font-size:36px;
+max-width:850px;
+margin:auto;
+text-shadow:0 2px 8px rgba(0,0,0,0.4);
+-webkit-text-stroke:0.5px rgba(255,255,255,0.3);
 }
 
 .hero p{
+max-width:750px;
+margin:25px auto;
 font-size:19px;
-text-shadow:0 3px 15px rgba(0,0,0,0.6);
+opacity:0.95;
+text-shadow:0 2px 6px rgba(0,0,0,0.4);
 }
+
+/* BOTONES */
 
 .cta{
 display:inline-block;
-margin-top:30px;
+margin-top:25px;
 padding:16px 45px;
 background:white;
 color:#1c3b28;
-border-radius:50px;
+border-radius:40px;
 text-decoration:none;
 font-size:18px;
 font-weight:bold;
 transition:0.3s;
-box-shadow:0 15px 35px rgba(0,0,0,0.25);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
 }
 
 .cta:hover{
-transform:scale(1.05);
+transform:scale(1.07);
 }
 
-/* SECCIÓN */
+/* SECCIONES */
 
 .section{
-padding:90px 20px;
-max-width:1000px;
+padding:80px 20px;
+max-width:1100px;
 margin:auto;
 text-align:center;
 }
 
 .section h2{
 font-size:30px;
-margin-bottom:50px;
+margin-bottom:40px;
 color:#1c3b28;
 }
 
-/* DESPLEGABLES PREMIUM */
+/* DESPLEGABLES BENEFICIOS */
 
 .accordion{
-background:linear-gradient(135deg,#f7f5f0,#efe9df);
-border-radius:20px;
-padding:25px;
-margin:18px 0;
-box-shadow:0 15px 35px rgba(0,0,0,0.06);
+max-width:900px;
+margin:30px auto;
+text-align:left;
+}
+
+.accordion-item{
+background:linear-gradient(135deg,#ffffff,#f7f4ef);
+margin-bottom:20px;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.06);
+}
+
+.accordion-header{
+padding:22px;
 cursor:pointer;
-transition:0.3s;
-font-weight:600;
+font-weight:bold;
+font-size:18px;
+background:#e7f2ea;
 color:#1c3b28;
-border-left:6px solid #2f5f42;
+transition:0.3s;
 }
 
-.accordion:hover{
-transform:translateY(-6px);
-box-shadow:0 25px 45px rgba(0,0,0,0.1);
+.accordion-header:hover{
+background:#d4eadf;
 }
 
-.panel{
+.accordion-content{
 max-height:0;
 overflow:hidden;
-transition:0.4s ease;
-padding:0 25px;
-background:#e9f2ec;
-border-radius:0 0 20px 20px;
+transition:max-height 0.4s ease;
+padding:0 22px;
+background:white;
 }
 
-.accordion.active + .panel{
-max-height:350px;
-padding:20px 25px;
+.accordion-content p{
+margin:20px 0;
 }
 
-/* BLOQUE CONFIANZA */
+/* BLOQUE DESTACADO CONFIANZA */
 
 .highlight{
-background:#e9f2ec;
-padding:35px;
-border-radius:20px;
-margin:60px 0;
+background:#e7f2ea;
+padding:25px;
+border-left:6px solid #285c3e;
+margin:50px auto;
 font-size:18px;
 font-weight:500;
+max-width:900px;
+border-radius:10px;
 }
 
-/* EMPRENDEDORAS */
+/* BLOQUE EMPRENDEDORA */
 
 .entrepreneur{
-background:linear-gradient(135deg,#1c3b28,#2f5f42);
+background:linear-gradient(135deg,#1c3b28,#285c3e);
 color:white;
 padding:90px 20px;
 text-align:center;
 }
 
+.entrepreneur h2{
+font-size:32px;
+margin-bottom:25px;
+}
+
 .whatsapp-btn{
 display:inline-block;
-margin-top:25px;
-padding:15px 35px;
+margin-top:30px;
+padding:16px 40px;
 background:#25D366;
 color:white;
-border-radius:50px;
+border-radius:40px;
 text-decoration:none;
 font-size:18px;
 font-weight:bold;
 transition:0.3s;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
 
 .whatsapp-btn:hover{
-transform:scale(1.05);
+transform:scale(1.07);
 }
 
 /* BOTÓN FLOTANTE */
 
-.floating{
+.floating-btn{
 position:fixed;
-bottom:25px;
-right:25px;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
 background:#1c3b28;
 color:white;
-padding:18px 30px;
+padding:15px 35px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
-box-shadow:0 15px 35px rgba(0,0,0,0.25);
-transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 z-index:999;
+transition:0.3s;
 }
 
-.floating:hover{
-transform:scale(1.08);
+.floating-btn:hover{
+transform:translateX(-50%) scale(1.05);
 }
 
 /* FOOTER */
@@ -180,8 +192,9 @@ transform:scale(1.08);
 .footer{
 background:#1c3b28;
 color:white;
-padding:35px;
+padding:30px;
 text-align:center;
+margin-top:60px;
 font-size:14px;
 }
 
@@ -192,14 +205,11 @@ font-size:14px;
 
 <section class="hero">
 
-<div class="hero-content">
-
 <h1>Activa tu 15% de descuento en Oriflame</h1>
 
 <p>
 Regístrate como Member de forma gratuita y accede a 15% de bienvenida,
-15% de cashback, envío gratis con productos seleccionados
-y el sistema Comparte y Gana.
+15% de cashback, envío gratis con productos seleccionados y el sistema Comparte y Gana.
 </p>
 
 <a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez"
@@ -207,77 +217,95 @@ target="_blank" class="cta">
 ✨ Activar mi 15% ahora
 </a>
 
-</div>
-
 </section>
 
 <section class="section">
 
 <h2>Beneficios exclusivos</h2>
 
-<div class="accordion">🎁 15% de Bienvenida</div>
-<div class="panel">
-<p>Obtén un 15% de descuento en tu primer pedido al registrarte como Member.</p>
+<div class="accordion">
+
+<div class="accordion-item">
+<div class="accordion-header">🎁 15% de Bienvenida</div>
+<div class="accordion-content">
+<p>Obtén un 15% de descuento directo en tu primer pedido al registrarte como Member.</p>
+</div>
 </div>
 
-<div class="accordion">💸 15% Cashback acumulable</div>
-<div class="panel">
-<p>Recibe el 15% del importe de tus compras en saldo acumulable para futuras compras.</p>
+<div class="accordion-item">
+<div class="accordion-header">💸 15% Cashback acumulable</div>
+<div class="accordion-content">
+<p>Recibe el 15% del importe de tus compras en saldo wallet para futuras compras.</p>
+</div>
 </div>
 
-<div class="accordion">🚚 Envío Gratis con productos seleccionados</div>
-<div class="panel">
-<p>Puedes conseguir envío gratuito al incluir productos Top destacados en cada catálogo.</p>
+<div class="accordion-item">
+<div class="accordion-header">🚚 Envío gratis con productos seleccionados</div>
+<div class="accordion-content">
+<p>En cada catálogo puedes conseguir envío gratuito incluyendo productos Top seleccionados.</p>
+</div>
 </div>
 
-<div class="accordion">🤝 Comparte y Gana</div>
-<div class="panel">
-<p>Comparte productos desde tu cuenta y gana saldo adicional en tu wallet cuando otras personas compren.</p>
+<div class="accordion-item">
+<div class="accordion-header">🤝 Comparte y Gana</div>
+<div class="accordion-content">
+<p>Comparte productos desde tu cuenta y gana saldo en tu wallet cuando otras personas compren.</p>
+</div>
 </div>
 
-<div class="accordion">🏠 Recibe tu pedido en casa</div>
-<div class="panel">
-<p>Compra online desde la tienda oficial y recibe tu pedido cómodamente en tu domicilio.</p>
 </div>
 
 <div class="highlight">
-El registro como Member es completamente gratuito, sin compromiso de compra y puedes cancelarlo cuando quieras.
-Accedes a promociones privadas y ventajas exclusivas en cada catálogo.
+El registro es gratuito, sin compromiso de compra y puedes cancelarlo cuando quieras.
 </div>
+
+<a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez"
+target="_blank" class="cta">
+Quiero registrarme con descuento
+</a>
 
 </section>
 
 <section class="entrepreneur">
 
-<h2>¿Te gustaría ganar dinero extra desde casa?</h2>
+<h2>Únete al equipo y empieza sin inversión</h2>
 
 <p>
-Si quieres convertirte en emprendedora de belleza y generar ingresos extra,
-puedo ayudarte personalmente a empezar paso a paso.
+Crea tu propio negocio online de belleza sin inversión inicial,
+sin compra obligatoria y con acompañamiento paso a paso.
+Empieza desde casa, a tu ritmo y con libertad total.
 </p>
 
 <a href="https://wa.me/34610274439" target="_blank" class="whatsapp-btn">
-💬 Contactar por WhatsApp
+💚 Quiero empezar sin inversión
 </a>
+
+<p style="margin-top:15px;font-size:14px;opacity:0.9;">
+Información sin compromiso · Respuesta directa por WhatsApp
+</p>
 
 </section>
 
-<div class="footer">
-Guía informativa independiente sobre el programa Member Oriflame.
-</div>
-
 <a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez"
-target="_blank" class="floating">
+target="_blank" class="floating-btn">
 ✨ Quiero activar mi 15% para siempre
 </a>
 
+<div class="footer">
+Esta web es una guía informativa independiente sobre el programa Member. No es una web oficial de la compañía.
+</div>
+
 <script>
-var acc = document.getElementsByClassName("accordion");
-for (var i = 0; i < acc.length; i++) {
-acc[i].addEventListener("click", function() {
-this.classList.toggle("active");
-});
+document.querySelectorAll(".accordion-header").forEach(item=>{
+item.addEventListener("click",()=>{
+const content=item.nextElementSibling;
+if(content.style.maxHeight){
+content.style.maxHeight=null;
+}else{
+content.style.maxHeight=content.scrollHeight+"px";
 }
+});
+});
 </script>
 
 </body>
