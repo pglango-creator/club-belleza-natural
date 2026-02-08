@@ -3,22 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Registrarse gratis en Oriflame España | 15% descuento permanente</title>
-<meta name="description" content="Regístrate gratis en Oriflame España como Member y consigue 15% de descuento permanente en todos los productos. Registro oficial, sin cuota y sin compromiso."/>
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://beneficiosoriflame.com/">
 
-<meta property="og:title" content="Regístrate gratis en Oriflame España | 15% permanente">
-<meta property="og:description" content="Activa tu 15% de descuento permanente en Oriflame España. Registro gratis y sin compromiso.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://beneficiosoriflame.com/">
+<meta name="description" content="Regístrate gratis en Oriflame España y consigue 15% de descuento permanente + promociones exclusivas. Crea tu cuenta en 2 minutos. Registro oficial, sin cuota y sin compromiso." />
+
+<link rel="canonical" href="https://beneficiosoriflame.com/" />
+<link rel="icon" type="image/png" href="favicon.png" />
 
 <style>
+
 body{
 margin:0;
 font-family:'Segoe UI',sans-serif;
-background:#f6f3ed;
+background:linear-gradient(to bottom,#f4f1ea 0%,#f7f4ef 40%,#eef5f0 100%);
 color:#1c1c1c;
 line-height:1.6;
 }
@@ -30,20 +27,22 @@ background:linear-gradient(rgba(28,59,40,0.78),rgba(28,59,40,0.78)),
 url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1600');
 background-size:cover;
 background-position:center;
-padding:110px 20px 140px;
+padding:110px 20px 130px;
 text-align:center;
 color:white;
+position:relative;
 }
 
 .hero h1{
 font-size:38px;
-margin-bottom:25px;
+line-height:1.2;
+margin-bottom:20px;
 }
 
 .cta{
 display:inline-block;
 margin-top:25px;
-padding:18px 45px;
+padding:16px 45px;
 background:white;
 color:#1c3b28;
 border-radius:60px;
@@ -51,13 +50,12 @@ text-decoration:none;
 font-size:18px;
 font-weight:bold;
 box-shadow:0 15px 35px rgba(0,0,0,0.3);
+transition:0.3s;
 }
 
-.cta:hover{
-transform:scale(1.05);
-}
+.cta:hover{transform:scale(1.05);}
 
-/* SECCIÓN BENEFICIOS */
+/* SECCIÓN */
 
 .section{
 padding:70px 20px;
@@ -72,13 +70,17 @@ margin-bottom:40px;
 color:#1c3b28;
 }
 
+/* ACORDEONES */
+
 .accordion{
-background:white;
+background:#ffffff;
 border-radius:20px;
 padding:22px;
-margin:15px 0;
+margin:18px 0;
+box-shadow:0 10px 25px rgba(0,0,0,0.06);
 cursor:pointer;
 font-weight:600;
+color:#1c3b28;
 border:2px solid #2f5f42;
 position:relative;
 }
@@ -92,10 +94,10 @@ right:20px;
 .panel{
 max-height:0;
 overflow:hidden;
-transition:0.4s ease;
+transition:0.3s ease;
+padding:0 20px;
 background:#eef5f0;
 border-radius:0 0 20px 20px;
-padding:0 20px;
 }
 
 .accordion.active + .panel{
@@ -103,23 +105,34 @@ max-height:200px;
 padding:15px 20px;
 }
 
-/* MINI PASOS */
+/* BLOQUE CONFIANZA */
+
+.highlight{
+background:#eaf3ee;
+padding:35px;
+border-radius:25px;
+margin:50px 0;
+font-weight:600;
+border:3px solid #2f5f42;
+}
+
+/* PASOS */
 
 .steps{
-margin-top:50px;
 background:white;
 padding:35px;
 border-radius:25px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+margin-top:40px;
 }
 
 .steps h3{
-margin-bottom:20px;
 color:#1c3b28;
+margin-bottom:20px;
 }
 
-.steps p{
-margin:8px 0;
+.step{
+margin:18px 0;
 }
 
 /* EQUIPO */
@@ -127,35 +140,34 @@ margin:8px 0;
 .entrepreneur{
 background:linear-gradient(135deg,#1c3b28,#2f5f42);
 color:white;
-padding:90px 20px;
+padding:80px 20px;
 text-align:center;
+margin-top:60px;
 }
 
 .whatsapp-btn{
 display:inline-block;
 margin-top:25px;
-padding:16px 40px;
+padding:15px 40px;
 background:#25D366;
 color:white;
-border-radius:50px;
+border-radius:60px;
 text-decoration:none;
 font-weight:bold;
 }
 
-/* BOTÓN FLOTANTE */
-
 .floating{
 position:fixed;
-bottom:20px;
+bottom:25px;
 left:50%;
 transform:translateX(-50%);
-background:#1c3b28;
+background:linear-gradient(135deg,#1c3b28,#2f5f42);
 color:white;
-padding:15px 45px;
-border-radius:50px;
+padding:16px 45px;
+border-radius:60px;
 text-decoration:none;
 font-weight:bold;
-box-shadow:0 10px 30px rgba(0,0,0,0.3);
+box-shadow:0 18px 45px rgba(0,0,0,0.35);
 z-index:999;
 }
 
@@ -166,21 +178,22 @@ padding:30px;
 text-align:center;
 font-size:14px;
 }
+
 </style>
 </head>
 
 <body>
 
 <section class="hero">
-<h1>Regístrate gratis en Oriflame España con 15% de descuento permanente</h1>
+<h1>15% de descuento permanente en Oriflame España</h1>
 
 <a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez"
 target="_blank" class="cta">
 ✨ Crear mi cuenta gratis ahora
 </a>
 
-<p style="font-size:14px;margin-top:10px;">
-✔ Registro oficial · ✔ Sin compromiso · ✔ Sin cuota
+<p style="font-size:14px; margin-top:10px;">
+✔ Registro oficial · ✔ Sin cuota · ✔ Sin compromiso
 </p>
 </section>
 
@@ -190,40 +203,48 @@ target="_blank" class="cta">
 
 <div class="accordion">🎁 15% de Bienvenida</div>
 <div class="panel">
-<p>Obtén un 15% de descuento directo en tu primer pedido.</p>
+<p>Descuento directo en tu primer pedido.</p>
 </div>
 
 <div class="accordion">💸 15% Cashback acumulable</div>
 <div class="panel">
-<p>Recibe saldo acumulable para futuras compras.</p>
+<p>Recibes saldo para futuras compras.</p>
 </div>
 
-<div class="accordion">🚚 Envío gratis con productos seleccionados</div>
+<div class="accordion">🚚 Envío gratuito</div>
 <div class="panel">
-<p>Puedes conseguir envío gratuito incluyendo productos destacados.</p>
+<p>Disponible con productos seleccionados.</p>
 </div>
 
-<div class="accordion">🤝 Comparte y gana</div>
+<div class="accordion">🏠 Recibe en casa</div>
 <div class="panel">
-<p>Gana saldo adicional cuando otras personas compren desde tu enlace.</p>
+<p>Compra online y recibe cómodamente en tu domicilio.</p>
+</div>
+
+<div class="highlight">
+El registro es gratuito, sin compromiso y puedes cancelarlo cuando quieras.
 </div>
 
 <div class="steps">
 <h3>Cómo registrarte en 2 minutos</h3>
-<p>1️⃣ Pulsa el botón de arriba.</p>
-<p>2️⃣ Introduce tus datos básicos.</p>
-<p>3️⃣ Confirma tu cuenta y empieza a comprar con descuento.</p>
+
+<div class="step"><strong>1.</strong> Haz clic en el botón verde.</div>
+<div class="step"><strong>2.</strong> Completa tus datos básicos.</div>
+<div class="step"><strong>3.</strong> Confirma tu cuenta y empieza a comprar con descuento.</div>
+
 </div>
 
 </section>
 
 <section class="entrepreneur" id="equipo">
 <h2>¿Quieres ganar dinero extra?</h2>
-<p>Si te interesa empezar desde casa con apoyo real, escríbeme y te explico cómo funciona.</p>
+
+<p>Si te interesa formar parte del equipo y generar ingresos desde casa, contáctame y te explico cómo empezar.</p>
 
 <a href="https://wa.me/34610274439" target="_blank" class="whatsapp-btn">
 💚 Contactar por WhatsApp
 </a>
+
 </section>
 
 <div class="footer">
@@ -236,24 +257,12 @@ target="_blank" class="floating" id="floatBtn">
 </a>
 
 <script>
-var acc=document.getElementsByClassName("accordion");
-for(var i=0;i<acc.length;i++){
-acc[i].addEventListener("click",function(){
+var acc = document.getElementsByClassName("accordion");
+for (var i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
 this.classList.toggle("active");
 });
 }
-
-const floatBtn=document.getElementById("floatBtn");
-const equipo=document.getElementById("equipo");
-
-window.addEventListener("scroll",function(){
-const rect=equipo.getBoundingClientRect();
-if(rect.top<window.innerHeight-100){
-floatBtn.style.display="none";
-}else{
-floatBtn.style.display="block";
-}
-});
 </script>
 
 </body>
