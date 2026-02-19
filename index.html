@@ -22,27 +22,6 @@ color:#1c1c1c;
 line-height:1.6;
 }
 
-/* ===== BOTÓN FIJO MEMBER (ÚNICO AÑADIDO) ===== */
-.member-login{
-position:fixed;
-top:16px;
-left:16px;
-z-index:1000;
-background:linear-gradient(135deg,#c8a95c,#e4c878);
-color:#1c3b28;
-padding:10px 20px;
-border-radius:40px;
-text-decoration:none;
-font-size:14px;
-font-weight:700;
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
-transition:transform .2s, box-shadow .2s;
-}
-.member-login:hover{
-transform:scale(1.05);
-box-shadow:0 14px 35px rgba(0,0,0,0.35);
-}
-
 /* HERO */
 .hero{
 background:linear-gradient(rgba(28,59,40,0.82),rgba(28,59,40,0.82)),
@@ -55,6 +34,23 @@ color:white;
 position:relative;
 }
 
+/* BOTÓN LOGIN MEMBER */
+.member-login{
+position:absolute;
+top:20px;
+left:20px;
+z-index:10;
+background:linear-gradient(135deg,#c8a95c,#e4c878);
+color:#1c3b28;
+padding:10px 22px;
+border-radius:40px;
+text-decoration:none;
+font-size:14px;
+font-weight:700;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Mejora contraste en todos los dispositivos */
 .hero h1{
 text-shadow:0 2px 8px rgba(0,0,0,0.55);
 }
@@ -251,14 +247,14 @@ font-size:14px;
 
 <body>
 
-<!-- BOTÓN MEMBER FIJO -->
+<section class="hero">
+
 <a href="https://es.oriflame.com/?store=ES-patriciagalangomez"
 target="_blank"
 class="member-login">
 Ya soy Member · Iniciar sesión
 </a>
 
-<section class="hero">
 <h1>Cómo registrarse en Oriflame España y obtener 15% de descuento permanente</h1>
 
 <a href="https://es.oriflame.com/member-benefits?store=ES-patriciagalangomez"
@@ -273,10 +269,12 @@ target="_blank" class="cta">
 <p class="notice">
 ⏳ Las promociones cambian en cada catálogo. Activa tu 15% hoy.
 </p>
+
 </section>
 
 <section class="section">
 <h2>Cómo registrarte en Oriflame España como Member</h2>
+
 <p>
 Crea tu cuenta oficial gratis y empieza a ahorrar desde tu primer pedido.
 Sin cuota, sin compromiso y con acceso inmediato a promociones exclusivas.
@@ -309,6 +307,7 @@ Sin cuota, sin compromiso y con acceso inmediato a promociones exclusivas.
 <div class="highlight">
 El registro es totalmente gratuito, sin compromiso de compra y puedes cancelarlo cuando quieras.
 </div>
+
 </section>
 
 <section class="entrepreneur" id="equipo">
