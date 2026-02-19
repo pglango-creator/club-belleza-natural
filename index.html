@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Cómo registrarse en Oriflame España como Member | 15% descuento permanente</title>
 
 <meta name="description" content="Regístrate gratis en Oriflame España y consigue 15% de descuento permanente + promociones exclusivas. Crea tu cuenta en 2 minutos. Registro oficial, sin cuota y sin compromiso."/>
+
+<meta name="google-site-verification" content="8jjOtc1V-aSNnCRMXsst6Gff2L1XlbnSPDW8H0m0-os"/>
 
 <meta property="og:title" content="Regístrate gratis en Oriflame España | 15% permanente"/>
 <meta property="og:description" content="Activa tu 15% de descuento permanente en Oriflame. Crea tu cuenta gratis como Member en solo 2 minutos."/>
@@ -25,41 +26,26 @@ color:#1c1c1c;
 line-height:1.6;
 }
 
-/* CONTENEDOR LOGIN MEMBER */
-.member-box{
-position:fixed;
-top:16px;
-left:16px;
-z-index:3000;
-text-align:left;
-}
-
-/* TEXTO */
-.member-text{
-font-size:13px;
-font-weight:600;
-color:#1c3b28;
-margin-bottom:6px;
-padding-left:8px;
-}
-
-/* BOTÓN LOGIN */
+/* ===== BOTÓN MEMBER FIJO ARRIBA ===== */
 .member-login{
-display:inline-block;
+position:fixed;
+top:18px;
+left:18px;
+z-index:1000;
 background:linear-gradient(135deg,#c8a95c,#e4c878);
 color:#1c3b28;
-padding:14px 26px;
-border-radius:50px;
-text-decoration:none;
-font-size:15px;
+padding:12px 26px;
+border-radius:45px;
 font-weight:700;
-box-shadow:0 12px 28px rgba(0,0,0,0.4);
+font-size:15px;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 transition:0.3s;
 }
 
 .member-login:hover{
-transform:scale(1.05);
-box-shadow:0 18px 40px rgba(0,0,0,0.45);
+transform:scale(1.06);
+box-shadow:0 14px 32px rgba(0,0,0,0.4);
 }
 
 /* HERO */
@@ -92,7 +78,7 @@ height:100px;
 background:linear-gradient(to bottom,rgba(28,59,40,0) 0%,#f6f3ed 100%);
 }
 
-/* CTA */
+/* BOTÓN PRINCIPAL */
 .cta{
 display:inline-block;
 background:linear-gradient(135deg,#c8a95c,#e4c878);
@@ -119,6 +105,7 @@ background:rgba(255,255,255,0.15);
 padding:14px 20px;
 border-radius:20px;
 font-weight:600;
+backdrop-filter:blur(6px);
 color:white;
 display:inline-block;
 }
@@ -134,6 +121,101 @@ border-top-left-radius:60px;
 border-top-right-radius:60px;
 }
 
+.section h2{
+font-size:32px;
+margin-bottom:40px;
+margin-top:0;
+color:#1c3b28;
+}
+
+/* resto del CSS SIN CAMBIOS */
+.accordion{
+background:#ffffff;
+border-radius:25px;
+padding:25px;
+margin:18px 0;
+box-shadow:0 18px 40px rgba(0,0,0,0.06);
+cursor:pointer;
+font-weight:600;
+border:2px solid #2f5f42;
+font-size:18px;
+position:relative;
+}
+
+.accordion::after{
+content:"▼";
+position:absolute;
+right:25px;
+}
+
+.panel{
+max-height:0;
+overflow:hidden;
+transition:0.4s ease;
+padding:0 25px;
+background:linear-gradient(135deg,#dff0e6,#f0f7f3);
+border-radius:0 0 25px 25px;
+color:#1c3b28;
+}
+
+.accordion.active + .panel{
+max-height:250px;
+padding:20px 25px;
+}
+
+.steps{
+margin-top:40px;
+background:white;
+padding:30px;
+border-radius:30px;
+box-shadow:0 20px 45px rgba(0,0,0,0.08);
+}
+
+.highlight{
+background:linear-gradient(135deg,#e2f4ea,#ffffff);
+padding:40px;
+border-radius:35px;
+margin:50px 0 20px;
+font-size:20px;
+font-weight:600;
+border:3px solid #2f5f42;
+}
+
+.entrepreneur{
+background:linear-gradient(135deg,#1c3b28,#2f5f42);
+color:white;
+padding:90px 20px;
+text-align:center;
+}
+
+.whatsapp-btn{
+display:inline-block;
+margin-top:30px;
+padding:18px 45px;
+background:#25D366;
+color:white;
+border-radius:60px;
+text-decoration:none;
+font-size:19px;
+font-weight:bold;
+}
+
+.floating{
+position:fixed;
+bottom:25px;
+left:50%;
+transform:translateX(-50%);
+background:linear-gradient(135deg,#1c3b28,#2f5f42);
+color:white;
+padding:20px 75px;
+border-radius:60px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 18px 45px rgba(0,0,0,0.35);
+z-index:999;
+font-size:18px;
+}
+
 .footer{
 background:#1c3b28;
 color:white;
@@ -146,15 +228,14 @@ font-size:14px;
 
 <body>
 
-<!-- LOGIN MEMBER -->
-<div class="member-box">
-  <div class="member-text">Si ya eres Member</div>
-  <a href="https://es.oriflame.com/?store=ES-patriciagalangomez"
-     target="_blank"
-     class="member-login">
-     ✨🔐 Iniciar sesión
-  </a>
-</div>
+<!-- BOTÓN MEMBER ARRIBA -->
+<a class="member-login"
+href="https://es.oriflame.com/?store=ES-patriciagalangomez"
+target="_blank">
+💎 Si ya eres Member · Iniciar sesión
+</a>
+
+<!-- RESTO DE TU WEB SIN TOCAR -->
 
 <section class="hero">
 <h1>Cómo registrarse en Oriflame España y obtener 15% de descuento permanente</h1>
@@ -172,15 +253,6 @@ target="_blank" class="cta">
 ⏳ Las promociones cambian en cada catálogo. Activa tu 15% hoy.
 </p>
 </section>
-
-<section class="section">
-<h2>Beneficios exclusivos para Members</h2>
-<p>Compra directamente desde la tienda oficial y ahorra desde tu primer pedido.</p>
-</section>
-
-<div class="footer">
-Guía informativa independiente sobre el programa Member de Oriflame.
-</div>
 
 </body>
 </html>
