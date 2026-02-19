@@ -25,12 +25,27 @@ color:#1c1c1c;
 line-height:1.6;
 }
 
-/* BOTÓN LOGIN MEMBER FIJO */
-.member-login{
+/* CONTENEDOR LOGIN MEMBER */
+.member-box{
 position:fixed;
-top:18px;
-left:18px;
+top:16px;
+left:16px;
 z-index:3000;
+text-align:left;
+}
+
+/* TEXTO */
+.member-text{
+font-size:13px;
+font-weight:600;
+color:#1c3b28;
+margin-bottom:6px;
+padding-left:8px;
+}
+
+/* BOTÓN LOGIN */
+.member-login{
+display:inline-block;
 background:linear-gradient(135deg,#c8a95c,#e4c878);
 color:#1c3b28;
 padding:14px 26px;
@@ -119,47 +134,6 @@ border-top-left-radius:60px;
 border-top-right-radius:60px;
 }
 
-.section h2{
-font-size:32px;
-margin-bottom:40px;
-margin-top:0;
-color:#1c3b28;
-}
-
-.accordion{
-background:#ffffff;
-border-radius:25px;
-padding:25px;
-margin:18px 0;
-box-shadow:0 18px 40px rgba(0,0,0,0.06);
-cursor:pointer;
-font-weight:600;
-border:2px solid #2f5f42;
-font-size:18px;
-position:relative;
-}
-
-.accordion::after{
-content:"▼";
-position:absolute;
-right:25px;
-}
-
-.panel{
-max-height:0;
-overflow:hidden;
-transition:0.4s ease;
-padding:0 25px;
-background:linear-gradient(135deg,#dff0e6,#f0f7f3);
-border-radius:0 0 25px 25px;
-color:#1c3b28;
-}
-
-.accordion.active + .panel{
-max-height:250px;
-padding:20px 25px;
-}
-
 .footer{
 background:#1c3b28;
 color:white;
@@ -172,12 +146,15 @@ font-size:14px;
 
 <body>
 
-<!-- BOTÓN MEMBER -->
-<a href="https://identity-we.oriflame.com/Account/Login?ui_locales=es-ES"
-target="_blank"
-class="member-login">
-💎 Iniciar sesión Member
-</a>
+<!-- LOGIN MEMBER -->
+<div class="member-box">
+  <div class="member-text">Si ya eres Member</div>
+  <a href="https://es.oriflame.com/?store=ES-patriciagalangomez"
+     target="_blank"
+     class="member-login">
+     ✨🔐 Iniciar sesión
+  </a>
+</div>
 
 <section class="hero">
 <h1>Cómo registrarse en Oriflame España y obtener 15% de descuento permanente</h1>
@@ -204,15 +181,6 @@ target="_blank" class="cta">
 <div class="footer">
 Guía informativa independiente sobre el programa Member de Oriflame.
 </div>
-
-<script>
-var acc=document.getElementsByClassName("accordion");
-for(var i=0;i<acc.length;i++){
-acc[i].addEventListener("click",function(){
-this.classList.toggle("active");
-});
-}
-</script>
 
 </body>
 </html>
